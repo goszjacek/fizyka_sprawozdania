@@ -61,20 +61,34 @@ W kierunku zaporowym jednak, jedynie charakterystyka diody Zenera była wyznacza
 \end{itemize}
 \section{Opracowanie wyników pomiarów}
 \subsection{Kierunek przewodzenia}
+\subsubsection{Wspólny wykres charakterystyk prądowo- napięciowych  }
+
 \begin{figure}[H]
     \centering
     \includegraphics[height=0.27\paperheight]{graph1}
-    \caption{ Wspólny  wykres  charakterystyk  prądowo-
-napięciowych dla 4 typów diod,  $log(I) = f(U)$  dla  wszystkich  zmierzonych  diod. Oznaczenie jak na rysunku. }
-    \label{fig:graph3}
+    \label{fig:graph1}
 \end{figure}
+
+\subsubsection{Wykres charakterystyki napięciowej dla diody krzemowej. }
+
 
 \begin{figure}[H]
     \centering
     \includegraphics[height=0.27\paperheight]{graph2}
-    \caption{ Wykres  zlinearyzowany $ log(I) = f(U)$ dla diody krzemowej wraz z dopasowaną prostą. }
-    \label{fig:graph3}
+    \label{fig:graph2}
 \end{figure}
+
+\subsubsection{Współczynnik idealności dla diody krzemowej. }
+Do wyznaczenia współczynnika idealności skorzystamy z zależności prawdziwej dla małych $I$:
+$$ ln(I) = ln(I_s) + \frac{e}{mkT}U $$
+$$ gdzie \beta =  ln(I_s), \alpha =  \frac{e}{mkT}U $$
+Stąd:
+$$ m = \frac{1}{\alpha U_t} $$
+Przyjmujemy $ U_t = 26mV $.
+Korzystając z funkcji REGLINP otrzymujemy $ \alpha = 10,3096$.
+Zatem
+$$ m = \frac{1}{10,3096*26} =  2,52 $$
+
 
 \subsubsection{Przesunięcie charakterystyk diody Si i Ge}
 Średnia wartość różnicy $U_{Si} - U_{Ge}$ wyniosła: $U_{Si} - U_{Ge} = 0.3V$, taką samą różnicę zaobserwowano także w większości punktów pomiarowych (tzn. jest także medianą).\\
@@ -102,6 +116,31 @@ $$W_{gZenera} - W_{gSi} \approx 0.28eV$$
 $$W_{gZenera} \approx 1.39eV$$
 Co najbliższe jest wartości odpowiadającej fosforkowi indu ($1.35eV$) lub arsenkowi galu ($1.43eV$).
 \subsection{Kierunek zaporowy}
+\subsubsection{Wykresy charakterystyk napięciowych dla diody germanowej,krzemowej, Zenera i diody świecącej. }
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[height=0.27\paperheight]{graph3}
+    \label{fig:graph3}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[height=0.27\paperheight]{graph4}
+    \label{fig:graph4}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[height=0.27\paperheight]{graph5}
+    \label{fig:graph5}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[height=0.27\paperheight]{graph6}
+    \label{fig:graph6}
+\end{figure}
 \subsubsection{Dioda Zenera}
 Napięcie stablizowane diody Zenera, odczytane dla warotści $I = 5mA$ wynosi $U = 15.79V$.
 Aby obliczyć współczynnik stabilizacji, wyliczamy odpowiednio rezystancję statyczną i dynamiczną. Do wyliczenia $\Delta U$ i $\Delta I$ użyjemy prądów z zakresu $2mA-8mA$:
