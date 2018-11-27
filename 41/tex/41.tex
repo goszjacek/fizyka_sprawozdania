@@ -22,11 +22,46 @@ Celem ćwiczenia było zapoznanie się ze sposobem wyznaczania poziomej składow
 magnetycznego pola ziemskiego przy użyciu przyrządu nazywanego busolą stycznych,\
 a także zaobserwowanie podstawowych praw fizycznych wiążących prąd elektryczny z indukcją magnetyczną.
 \section{Wstęp teoretyczny}
-
+Busola stycznych to przedmiot, za pomocą którego jesteśmy w stanie wyznaczyć składową horyzontalną\
+pola magnetycznego Ziemi. Aby dokonać tego pomiaru, pomoże nam prawo Biota-Savarta, które mówi, że\
+$$ d\mathbf B = \frac{\mu_{0}I}{4\pi}\frac{d\mathbf{l} \times \mathbf{r}}{r^{3}} $$
+Z powyższego prawa jesteśmy w stanie wyliczyć pole dla środka cewki kołowej lub bardzo krótkiej zwojnicy złożonej z N zwojów - wynosi ono:
+$$ B = \mu_{0} * \frac{NI}{2R} $$
+gdzie: \\
+N - liczba zwojów\\
+R - promień cewki\\
+I - natężenie prądu\\
+\\
+Jest to wzór na całkowite pole magnetyczne wytwarzane w środku przewodnika kołowego, jednak\
+aby obliczyć składową horyzontalną pola magentycznego ziemi $B_{0}$ musimy posłużyć się faktem, że\
+$$\frac{B}{B_{0}} = tg\alpha$$
+a zatem
+$$ B_{0} = \mu_{0} * \frac{NI}{2Rtg\alpha} $$
+Powyższy wzór pozwoli nam wyliczyć składową horyzontalną Ziemskiego pola magnetycznego.
 \section{Realizacja doświadczenia}
+W realizacji doświadczenia posłużyliśmy się układem przedstawionym na Rys. w1. w załączonych materiałach.\
+Dla danej ilości zwojów dokonywaliśmy czterech pomiarów, każdy dla innej wartości płynącego prądu i\
+w konsekwencji innego kąta - z zakresu 25-60 stopni. Pomiary zostały dokonane dla ilości zwojów: 40, 36, 24, 16.
 \subsection{Pomiary}
-\subsection{Wykresy}
+\textbf{Wstaw tu tabelkę z pomiarami i B0!! <3}\\
+klasa amperomierza - $4mA$ (dla ustalonego zakresu $300mA$)\\
+średnica cewki - $260mm$\\
+niepewność pomiaru średnicy cewki - $3mm$\\
+\\
+Obliczone wartości średnie i błędy pomiaru znajdują się w załączonych materiałach.
+Średnia wartość zmierzonego $B{0}$ wyniosła $B_{0} = 25.07\mu T$.\\
+Wartośc niepewności rozszerzonej wyniosła $u_{c} = 1.25\mu T$.\\
+Wartość tabelaryczna składowej horyzontalnej pola magnetycznego dla Krakowa wynosi: $19.86\mu T$ (odczyt\
+z dnia 27.11.2018)\\ 
+Uwzględniając niepewność rozszerzoną i przyjmując za współczynnik rozszerzenia $k = 2$, nasze zmierzone $B_{0}$\
+zawiera się w przedziale od $22.57\mu T$ do $27.57 \mu T$.
 \section{Wnioski}
-
+Zmierzona przez nas składowa horyzontalna magnetycznego pola ziemskiego, po uwzględnieniu rozszerzenia o\
+niepewność rozszerzoną, nie pokrywa się z wartością rzeczywistą. Spowodowane jest to niedokładnością urządzeń\
+pomiarowych użytych w doświadczeniu, a także dosyć sporymi zakłóceniami pola magnetycznego dookoła\
+w trakcie wykonywania doświadczenia (wszelkie urządzenie elektroniczne).\\
+Co zaskakujące jednak, z obliczeń niepewności rozszerzonej wynika iż niepewność pomiaru kątu wychylenia igły\
+ma najmniejszy wpływ na niepewność złożoną. Największy wpływ ma pomiar prądu na amperomierzu.\
+Wynik ten został zaobserwowany ponieważ amperomierz był analogowy i jego klasa była dosyć duża w porównaniu\
+do wyniku pomiaru.
 \end{document}
-
